@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/959e5e0f4a.js" crossorigin="anonymous"></script>
+  <!-- GOOGLE FONTS  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<style>
+  html , body {
+    background-image: url("img/bg-min.png");
+    background-color: black;
+  }
+
+  .cardd {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(50px);
+
+}
+
+
+
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgb(247, 247, 247);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f7f7f700;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgba(33, 149, 243, 0);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+  <!--HEADER SECTİON-->
+
+  <header class="bg-black py-8  text-gaga-grey font-gemunu uppercase border-solid border-b-2 border-gray-100 border-opacity-50">
+
+    <!--HEADER CONTAİNER-->
+    <div class="container flex items-center justify-between space-x-16 ">
+
+      <!--LOGO--> 
+      <a href="#" class="text-6xl font-bold text-gaga-grey">
+        <img src="img/dataproject.png" height="80" width="300" alt="">
+      </a>
+
+
+
+      <!--NAVİGATİON-->
+      <nav class="">
+        <!--MENU-->
+        <div class="flex items-center justify-center text-lg space-x-20">
+          <button class="border border-solid py-1 px-5 border-opacity-35 border-gray-100">dApp</button>
+          <img src="img/metamask.png" height="80" width="300" alt="">
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section>
+    <div class="container mt-10">
+        <div class="cardd border border-solid border-gray-800 w-4/5 rounded-3xl  text-white mx-auto border-opacity-85 p-6 "  >
+          
+            <div class="flex justify-start">
+            <div>
+                <button class="font-raleway border p-2 text-xs border-opacity-50 border-gray-400 "> <span class="border border-solid p-1 rounded-full me-2 border-gray-400"><i class="fa-solid fa-arrow-left"></i></span> HOME BACK</button>
+            </div>
+            </div>
+
+            <div class="text-white font-raleway mt-10 text-4xl">
+             <p> Super Computer </p> 
+            </div>
+
+            <div class="text-white font-firacode mt-8 text-lg ">
+                <p>CPU Usage (1core-128core)</p>
+            </div>
+ 
+            <div class="rangee mt-8 ">
+                <input type="range" min="0" max="100" value="50" id="slider" class="w-full">
+            </div>
+
+            <div class="font-firacode  text-white mt-5 ">
+                <p>I approve participation in the DDOS Test service</p>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+
+              <div class="font-firacode mt-6 flex justify-center">
+                <button class="border border-solid border-gaga-grey border-opacity-15  py-1 px-5 rounded-3xl">SAVE CHANGES</button>
+              </div>
+
+            </div>
+        </div>
+    
+  </section> 
+
+  <section>
+    <div class="container mt-5 w-4/5">
+    <div class="flex  justify-center items-center gap-11">
+       
+            <div class="border-1 border-solid w-56  border-gray-400 border-opacity-40   text-white rounded-3xl p-3 cardd">
+                <img src="img/world.png" width="70" height="70" alt=""> 
+                <p class="font-raleway mt-2">DDos Test</p>
+                <button class="border-1 border-solid border-gray-700 ps-2 py-1 rounded-xl"> See more <i class="fa-solid fa-arrow-right border p-1 rounded-full ms-8 me-2"></i> </button>
+                </div>
+
+            <div class="border-1 border-solid w-56  border-gray-400 border-opacity-40   text-white rounded-3xl p-3">
+                <img src="img/goz.png" width="70" height="70" alt="">
+                <p class="font-raleway mt-2">Cyber Sec. Research</p>
+                <button class="border-1 border-solid border-gray-700 ps-2 py-1 rounded-xl"> See more <i class="fa-solid fa-arrow-right border p-1 rounded-full ms-8 me-2"></i> </button>
+            </div>
+
+            <div class="border-1 border-solid w-56  border-gray-400 border-opacity-40   text-white rounded-3xl p-3">
+                <img src="img/kalkan.png" width="70" height="70" alt="">
+                <p class="font-raleway mt-2">Vulnerability Scanning</p>
+                <button class="border-1 border-solid border-gray-700 ps-2 py-1 rounded-xl"> See more <i class="fa-solid fa-arrow-right border p-1 rounded-full ms-8 me-2"></i> </button>
+            </div> 
+
+            <div class="border-1 border-solid w-56  border-gray-400 border-opacity-40   text-white rounded-3xl p-3">
+                <img src="img/sayfa.png" width="70" height="70" alt="">
+                <p class="font-raleway mt-2">DDos Test</p>
+                <button class="border-1 border-solid border-gray-700 ps-2 py-1 rounded-xl"> See more <i class="fa-solid fa-arrow-right border p-1 rounded-full ms-8 me-2"></i> </button>
+            </div> 
+
+
+
+
+      
+    </div>
+
+    </div>
+  </section> 
+
+
+</body>
+</html> 
